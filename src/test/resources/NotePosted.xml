@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<entry xmlns:service="http://activitystrea.ms/service-provider"
+		xmlns:georss="http://www.georss.org/georss" xmlns:activity="http://activitystrea.ms/spec/1.0/">
+		<id>tag:site.org,2009-01-01:/some/unique/id </id>
+		<title type="text">noteposter posted a note!</title>
+		<content type="text">The weather is great outside.</content>
+		<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+		<georss:point>19.313735 -155.32196</georss:point>
+		<activity:object>
+			<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+			<content type="text">The weather is great outside.</content>
+			<link rel="alternate" type="text/html" href="http://notepostingsite.org/noteposter/1234567890" />
+		</activity:object>
+		<service:provider>
+			<name>NotePostingSite</name>
+			<uri>http://www.notepostingsite.org</uri>
+			<icon>http://notepostingsite.org/icon.jpg</icon>
+		</service:provider>
+	</entry>
+</feed>

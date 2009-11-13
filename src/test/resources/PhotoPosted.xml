@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<entry xmlns:service="http://activitystrea.ms/service-provider"
+		xmlns:activity="http://activitystrea.ms/spec/1.0/">
+		<id>tag:site.org,2009-01-01:/some/unique/id
+		</id>
+		<title type="text">picturetaker took a Picture!</title>
+		<activity:verb>http://activitystrea.ms/schema/1.0/post
+		</activity:verb>
+		<published>2009-11-13T22:39:44.959Z
+		</published>
+		<activity:object xmlns:media="http://purl.org/syndication/atommedia">
+			<activity:object-type>http://activitystrea.ms/schema/1.0/photo
+			</activity:object-type>
+			<link type="image/jpeg" rel="preview"
+				href="https://picturepostingsite.com/picturetaker/1234567890/thumbnail"
+				media:height="16" media:width="32" />
+			<link type="image/jpeg" rel="enclosure"
+				href="http://picturepostingsite.com/picturetaker/1234567890/larger"
+				media:height="1024" media:width="768" />
+			<title type="text">My backyard!</title>
+			<media:description type="text">this is an excellent
+				shot of my backyard on a summer evening.</media:description>
+			<link rel="alternate" type="text/html"
+				href="http://picturepostingsite.com/picturetaker/1234567890" />
+		</activity:object>
+		<service:provider>
+			<name>PicturePostingSite</name>
+			<uri>http://www.picturepostingsite.com
+			</uri>
+			<icon>http://www.picturepostingsite.com/icon.jpg
+			</icon>
+		</service:provider>
+	</entry>
+</feed>
