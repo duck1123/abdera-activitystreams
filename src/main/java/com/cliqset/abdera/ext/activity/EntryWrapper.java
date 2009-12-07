@@ -188,7 +188,7 @@ public class EntryWrapper extends ExtensibleElementWrapper implements Entry {
 
 	public String getContent() {
 		Content content = getContentElement();
-		return content.getValue();
+		return (null == content ? null : content.getValue());
 	}
 
 	public Content getContentElement() {
