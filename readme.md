@@ -1,4 +1,6 @@
-* What is this package?
+# Abdera ActivityStreams Extension
+
+## What is this package?
 
 An extension to the Apache Abdera project that assists with creating
 and parsing Activitystrea.ms Atom feeds.
@@ -9,7 +11,7 @@ The Activity Streams specification defines an extension to the Atom
 feed format for expressing what people are doing around web; commonly
 referred to as an "Activity Stream".
 
-* How do I get started?
+## How do I get started?
 
 Documentation around this project is still scarce however you can get
 started by reviewing some example code.
