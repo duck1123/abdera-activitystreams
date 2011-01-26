@@ -259,7 +259,12 @@ public class EntryWrapper extends ExtensibleElementWrapper implements Entry {
 
 	public Date getEdited() {
 		DateTime edited = getEditedElement();
-		return edited.getDate();
+
+		if (edited != null) {
+			return edited.getDate();
+		}
+
+		return null;
 	}
 
 	public DateTime getEditedElement() {
@@ -281,7 +286,7 @@ public class EntryWrapper extends ExtensibleElementWrapper implements Entry {
 			return id.getValue();
 		}
 
-		return nil;
+		return null;
 	}
 
 	public IRIElement getIdElement() {
