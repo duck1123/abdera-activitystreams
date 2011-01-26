@@ -276,7 +276,12 @@ public class EntryWrapper extends ExtensibleElementWrapper implements Entry {
 
 	public IRI getId() {
 		IRIElement id = getIdElement();
-		return id.getValue();
+
+		if (id != null) {
+			return id.getValue();
+		}
+
+		return nil;
 	}
 
 	public IRIElement getIdElement() {
